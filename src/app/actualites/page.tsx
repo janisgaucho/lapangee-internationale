@@ -12,13 +12,26 @@ export default function ActualitesPage() {
   return (
     <div className="flex flex-col min-h-screen w-full items-center bg-muted/10">
       {/* Header Section */}
-      <section className="w-full py-16 md:py-24 bg-background border-b border-border/40 flex justify-center">
-        <div className="container px-4 md:px-6 flex flex-col items-center text-center space-y-6">
+      <section
+        className="relative w-full py-16 md:py-24 lg:py-32 flex justify-center overflow-hidden bg-muted"
+        style={{
+          backgroundImage: "url('https://res.cloudinary.com/due8mtlz/image/upload/f_auto,q_auto/v1787094736/Cl%C3%B4ture_%C3%A9pineux_15.jpg')",
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+        }}
+      >
+        {/* Effet Glassmorphism sans bordure ni ombre */}
+        <div className="absolute inset-0 bg-background/30 backdrop-blur-md z-0"></div>
+
+        {/* Dégradé fondu vers la couleur de fond */}
+        <div className="absolute inset-x-0 bottom-0 h-32 bg-gradient-to-t from-background to-transparent z-10 pointer-events-none"></div>
+
+        <div className="container px-4 md:px-6 flex flex-col items-center text-center space-y-6 relative z-20">
           <div className="space-y-4 max-w-3xl">
             <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl text-foreground">
               Actualités
             </h1>
-            <p className="text-lg text-muted-foreground md:text-xl leading-relaxed">
+            <p className="text-lg text-foreground/90 font-medium md:text-xl leading-relaxed">
               Retrouvez toutes nos dernières actualités, nos actions sur le terrain et nos événements.
             </p>
           </div>

@@ -37,6 +37,7 @@ export default function SenegalMap() {
           mapStyle="mapbox://styles/mapbox/light-v11"
           mapboxAccessToken={process.env.NEXT_PUBLIC_MAPBOX_TOKEN}
           attributionControl={false}
+          scrollZoom={false}
         >
           <NavigationControl position="bottom-right" />
           

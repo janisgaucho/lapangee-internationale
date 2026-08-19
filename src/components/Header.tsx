@@ -10,15 +10,18 @@ import {
   NavigationMenuTrigger,
   navigationMenuTriggerStyle,
 } from '@/components/ui/navigation-menu';
-import { Globe } from 'lucide-react';
 
 export function Header() {
   return (
     <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container mx-auto px-4 flex h-16 items-center justify-between">
         <Link href="/" className="flex items-center space-x-2">
-          <Globe className="h-6 w-6 text-primary" />
-          <span className="font-bold text-xl hidden sm:inline-block">La Pangée Internationale</span>
+          <img
+            src="https://res.cloudinary.com/due8mtlz/image/upload/f_auto,q_auto/v1787067776/logo-pangee-internationale-fond-transparent.png"
+            alt="Logo La Pangée Internationale"
+            className="h-10 w-auto"
+          />
+          <span className="font-bold text-xl hidden sm:inline-block text-[#1B6EA3]">La Pangée Internationale</span>
         </Link>
 
         <NavigationMenu>
@@ -31,7 +34,7 @@ export function Header() {
               </Link>
             </NavigationMenuItem>
             <NavigationMenuItem>
-              <NavigationMenuTrigger>L'association</NavigationMenuTrigger>
+              <NavigationMenuTrigger className='cursor-pointer'>L'association</NavigationMenuTrigger>
               <NavigationMenuContent>
                 <ul className="grid w-[280px] gap-2 p-4 md:w-[350px]">
                   <li>
@@ -39,7 +42,7 @@ export function Header() {
                       <NavigationMenuLink
                         className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
                       >
-                        <div className="text-sm font-medium leading-none mb-2">Notre histoire</div>
+                        <div className="text-sm font-semibold leading-none mb-2">Notre histoire</div>
                         <p className="line-clamp-2 text-sm leading-snug text-muted-foreground">
                           Retracez le parcours et l'évolution de La Pangée.
                         </p>
@@ -51,7 +54,7 @@ export function Header() {
                       <NavigationMenuLink
                         className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
                       >
-                        <div className="text-sm font-medium leading-none mb-2">À propos de nous</div>
+                        <div className="text-sm font-semibold leading-none mb-2">À propos de nous</div>
                         <p className="line-clamp-2 text-sm leading-snug text-muted-foreground">
                           L'équipe, nos valeurs, et notre mode d'action.
                         </p>

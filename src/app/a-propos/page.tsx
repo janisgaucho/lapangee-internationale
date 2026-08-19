@@ -14,23 +14,23 @@ export default function AProposPage() {
       <section
         className="relative w-full py-16 md:py-24 lg:py-32 flex justify-center overflow-hidden"
         style={{
-          backgroundImage: "url('https://res.cloudinary.com/due8mtlz/image/upload/v1787006930/image00169.webp')",
+          backgroundImage: "url('https://res.cloudinary.com/due8mtlz/image/upload/v1787094767/visite_village.jpg')",
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}
       >
         {/* Effet Glassmorphism (flou + translucidité + bordure blanche subtile + ombre interne) */}
-        <div className="absolute inset-0 bg-background/30 backdrop-blur-md border-t border-white/30 dark:border-white/10 shadow-inner z-0"></div>
+        <div className="absolute inset-0 bg-background/30 backdrop-blur-md z-0"></div>
 
         {/* Dégradé fondu vers la couleur de fond (pour effacer la bordure dure en bas) */}
         <div className="absolute inset-x-0 bottom-0 h-32 bg-gradient-to-t from-background to-transparent z-10 pointer-events-none"></div>
 
         <div className="container px-4 md:px-6 flex flex-col items-center text-center space-y-6 relative z-20">
           <div className="space-y-4 max-w-3xl">
-            <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl text-foreground drop-shadow-sm">
+            <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl text-foreground">
               À propos de nous
             </h1>
-            <p className="text-lg text-foreground/90 font-medium md:text-xl leading-relaxed drop-shadow-sm">
+            <p className="text-lg text-foreground/90 font-medium md:text-xl leading-relaxed">
               L’équipe, nos valeurs, et notre mode d’action.
             </p>
           </div>
@@ -41,10 +41,9 @@ export default function AProposPage() {
       <section className="w-full py-16 md:py-24 flex justify-center">
         <div className="container px-4 md:px-6 max-w-4xl space-y-12 text-muted-foreground leading-relaxed text-lg text-justify">
 
-          <div className="relative bg-primary/5 border-l-4 border-primary p-6 md:p-10 rounded-r-2xl shadow-sm transition-all duration-300 hover:shadow-md">
-            <p className="text-xl md:text-2xl leading-relaxed text-foreground/90 font-medium">
-              <span className="text-primary text-3xl font-serif absolute top-4 left-4 opacity-20">"</span>
-              L’association LA PANGÉE, née en mars 2019, est une association d’aide au développement durable.
+          <div className="relative bg-primary/5 border-l-4 border-primary p-6 md:p-10 rounded-r-2xl">
+            <p className="text-lg md:text-xl leading-relaxed text-foreground/90 font-medium">
+              L’association La Pangée Internationale, née en mars 2019, est une association d’aide au développement durable.
               <br /><br />
               Nous ne sommes pas une association humanitaire, notre objectif est d’amener les populations vers l’autonomie, par la création de coopératives agricoles et artisanales.
             </p>
@@ -80,7 +79,7 @@ export default function AProposPage() {
             <div className="flex flex-col items-center text-center group">
               <div className="relative w-40 h-40 mb-6 rounded-full overflow-hidden bg-gradient-to-br from-primary/10 to-primary/5 flex items-center justify-center border-4 border-background group-hover:border-primary/20 transition-all duration-300 shadow-md group-hover:shadow-lg ring-1 ring-border/50">
                 <img
-                  src="https://res.cloudinary.com/due8mtlz/image/upload/v1787007810/image00191-qz2uspwcw40nd3dlj01ay5wyk7x3it8h4h6cfqpsps.jpg"
+                  src="https://res.cloudinary.com/due8mtlz/image/upload/f_auto,q_auto/v1787007810/image00191-qz2uspwcw40nd3dlj01ay5wyk7x3it8h4h6cfqpsps.jpg"
                   alt="Michel Botella"
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                 />
@@ -93,7 +92,7 @@ export default function AProposPage() {
             <div className="flex flex-col items-center text-center group">
               <div className="relative w-40 h-40 mb-6 rounded-full overflow-hidden bg-gradient-to-br from-muted to-muted/50 flex items-center justify-center border-4 border-background group-hover:border-primary/10 transition-all duration-300 shadow-md group-hover:shadow-lg ring-1 ring-border/50">
                 <img
-                  src="https://res.cloudinary.com/due8mtlz/image/upload/v1787007787/Photo-Therese-pour-le-site-qrtbe6my7st94dr1y1dsy5s44nofsv85vajv09zfs0.jpg"
+                  src="https://res.cloudinary.com/due8mtlz/image/upload/f_auto,q_auto/v1787007787/Photo-Therese-pour-le-site-qrtbe6my7st94dr1y1dsy5s44nofsv85vajv09zfs0.jpg"
                   alt="Thérèse Wieviorka"
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                 />
@@ -106,7 +105,7 @@ export default function AProposPage() {
             <div className="flex flex-col items-center text-center group">
               <div className="relative w-40 h-40 mb-6 rounded-full overflow-hidden bg-gradient-to-br from-muted to-muted/50 flex items-center justify-center border-4 border-background group-hover:border-primary/10 transition-all duration-300 shadow-md group-hover:shadow-lg ring-1 ring-border/50">
                 <img
-                  src="https://res.cloudinary.com/due8mtlz/image/upload/v1787007833/Photo-Marine-BENZERROUK-secretaire-generale-adjointe-departement-education-qrtbcwkuwx27bhlyezh31zej0rzgbp5bcyl2hpvq8w.jpg"
+                  src="https://res.cloudinary.com/due8mtlz/image/upload/f_auto,q_auto/v1787007833/Photo-Marine-BENZERROUK-secretaire-generale-adjointe-departement-education-qrtbcwkuwx27bhlyezh31zej0rzgbp5bcyl2hpvq8w.jpg"
                   alt="Marine Benzerrouk"
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                 />
@@ -119,7 +118,7 @@ export default function AProposPage() {
             <div className="flex flex-col items-center text-center group">
               <div className="relative w-40 h-40 mb-6 rounded-full overflow-hidden bg-gradient-to-br from-muted to-muted/50 flex items-center justify-center border-4 border-background group-hover:border-primary/10 transition-all duration-300 shadow-md group-hover:shadow-lg ring-1 ring-border/50">
                 <img
-                  src="https://res.cloudinary.com/due8mtlz/image/upload/v1787007857/WhatsApp-Image-2024-12-02-a-09.47.32_244b8538-qz2v1a7f5rqp56xripaxo045elphnj8fmv5lui0o0w.jpg"
+                  src="https://res.cloudinary.com/due8mtlz/image/upload/f_auto,q_auto/v1787007857/WhatsApp-Image-2024-12-02-a-09.47.32_244b8538-qz2v1a7f5rqp56xripaxo045elphnj8fmv5lui0o0w.jpg"
                   alt="Laure Garcia"
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                 />
